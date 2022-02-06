@@ -12,8 +12,10 @@ from geopy.geocoders import Nominatim
 import pickle
 import bz2
 import _pickle as cPickle
+import os
 
 app = Flask(__name__)
+port = int(os.environ.get('PORT', 5000))
 if __name__ == '__main__':
     app.debug = True
     app.run()
