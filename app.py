@@ -1,11 +1,7 @@
-import bz2
-from distutils.log import debug
-from tkinter.messagebox import NO
-from typing import final
 import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
+# import pandas as pd
+# from sklearn.model_selection import train_test_split
+# from sklearn.ensemble import RandomForestRegressor
 from flask import Flask, render_template, request
 
 from datetime import datetime
