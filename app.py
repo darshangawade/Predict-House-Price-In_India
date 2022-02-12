@@ -16,10 +16,9 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-port = int(os.environ.get('PORT', 5000))
+
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.run(debug=True, use_reloader=True)
 
 # data = pd.read_csv('data/cleaned-data.csv')
 # data = data.iloc[:29430,:]
