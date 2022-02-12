@@ -2,7 +2,5 @@ Flask
 Jinja2
 numpy
 pandas
-
-
-
+gunicorn
 
