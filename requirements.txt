@@ -1,9 +1,9 @@
-Flask==1.1.2
-Jinja2==2.11.3
-numpy==1.18.5
-pandas==1.2.4
-pandocfilters==1.4.3
-scikit-learn==0.24.1
+Flask
+Jinja2
+numpy
+pandas
+pandocfilters
+scikit-learn
 
 
 
