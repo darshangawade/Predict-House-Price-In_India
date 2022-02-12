@@ -4,15 +4,10 @@ from tkinter.messagebox import NO
 from typing import final
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from flask import Flask, render_template, request
-from geopy.geocoders import Nominatim
-import pickle
-import bz2
-import _pickle as cPickle
-import os
+
 from datetime import datetime
 
 app = Flask(__name__)
