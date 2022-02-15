@@ -22,7 +22,7 @@ X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2)
 model = RandomForestRegressor(n_estimators=1000,min_samples_split=2,min_samples_leaf=1,max_features='sqrt',max_depth=None)
 model.fit(X_train,Y_train)
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/')
 def index():
     geolocator = Nominatim(user_agent="geoapiExercises")
     return render_template('index.html', title='House Price Prediction in India',subtitle='predict the price of your dream home . . .')
